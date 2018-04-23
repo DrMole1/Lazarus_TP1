@@ -1,0 +1,58 @@
+object Form1: TForm1
+  Left = 1457
+  Height = 293
+  Top = 204
+  Width = 400
+  Caption = 'Form1'
+  ClientHeight = 293
+  ClientWidth = 400
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '1.8.2.0'
+  object txtUser: TLabel
+    Left = 104
+    Height = 20
+    Top = 64
+    Width = 29
+    Caption = 'User'
+    Color = clGrayText
+    ParentColor = False
+    Transparent = False
+  end
+  object txtPss: TLabel
+    Left = 72
+    Height = 20
+    Top = 112
+    Width = 61
+    Caption = 'Password'
+    Color = clWindowFrame
+    ParentColor = False
+    Transparent = False
+  end
+  object TUser: TEdit
+    Left = 168
+    Height = 28
+    Top = 56
+    Width = 108
+    TabOrder = 0
+  end
+  object TPss: TEdit
+    Left = 168
+    Height = 28
+    Top = 104
+    Width = 108
+    EchoMode = emPassword
+    HideSelection = False
+    PasswordChar = #1
+    TabOrder = 1
+  end
+  object BtConnect: TButton
+    Left = 176
+    Height = 31
+    Top = 192
+    Width = 94
+    Caption = 'Connection'
+    OnClick = BtConnectClick
+    TabOrder = 2
+  end
+end
